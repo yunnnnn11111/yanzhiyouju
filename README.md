@@ -8,7 +8,7 @@
 
 ## 部署状态
 
-此文件夹是待部署源码，不是已经上线的网站。只有 Render 实际部署成功后显示的 HTTPS 地址才能转发给朋友。不要转发本机文件路径、localhost 或 127.0.0.1。
+应用已于 2026-10-29 部署到 Render Free，并完成实际公网 HTTPS 验证。固定访问地址：**https://yanzhiyouju.onrender.com/**。可直接转发给朋友，无需保持个人电脑开机。不要将本机文件路径、localhost、127.0.0.1 或 GitHub 仓库地址当作应用网址。
 
 ## Render 免费部署
 
@@ -23,7 +23,7 @@
 | --- | --- |
 | Runtime | Python |
 | Instance Type | Free |
-| Build Command | `pip install -r requirements.txt` |
+| Build Command | `python -m zipfile -e app-source.zip . && pip install -r requirements.txt` |
 | Start Command | `gunicorn cloud_app:application --bind 0.0.0.0:$PORT --workers 1 --threads 4 --timeout 60 --access-logfile -` |
 | Health Check Path | `/api/health` |
 | PYTHON_VERSION | `3.12.10` |
@@ -48,12 +48,12 @@
 
 ## 发布文件范围
 
-仅发布 `app.py`、`cloud_app.py`、`core/`、`web/`、`data/` 与部署配置、此说明。
+本仓库发布文件为 `app-source.zip`、`.gitignore`、`.python-version`、`README.md`、`render.yaml` 和 `requirements.txt`。源码归档包含 `app.py`、`cloud_app.py`、`core/`、`web/`、`data/` 等应用文件；构建时解压，后续修改后需重新打包。
 
 不要上传 `runtime_data/`、`config.local.json`、`.env`、个人台账、日志、测试目录或便携版 Python 运行时。仓库已提供 `.gitignore`；网页手动上传文件时也必须自行排除这些内容。
 
 ## 本地检查
 
-使用 Python 3.12 执行 `python cloud_app.py`，在本机打开 `http://127.0.0.1:8098`。这个检查地址不能给其他人当公网网址。
+使用 Python 3.12，先执行 `python -m zipfile -e app-source.zip .` 解压源码，再执行 `python cloud_app.py`，在本机打开 `http://127.0.0.1:8098`。这个检查地址不能给其他人当公网网址。
 
-离线验证已检查请求格式、访客隔离、签名 Cookie、配置、证据门禁、内容、审查和导出。离线验证使用明确的网页测试替身，不代表实际公网抓取或 Render 部署已经通过；最终仍需上线验证。
+2026-10-29 已完成离线检查和实际 Render 公网验证：健康检查、首页、前端脚本、无需 API Key 的网页模式、云端真实公开网页抓取、三种文案生成、本地规则审查及模型未执行标识、Markdown / JSON 导出、独立访客台账隔离均通过。离线检查使用明确的网页测试替身；公网验证使用实际联网请求。验证通过仅证明这些流程可运行，不代表产品档案中的认证或批次证据已核实。
