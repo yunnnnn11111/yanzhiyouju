@@ -8,7 +8,7 @@
 
 ## 部署状态
 
-应用已于 2026-10-29 部署到 Render Free，并完成实际公网 HTTPS 验证。固定访问地址：**https://yanzhiyouju.onrender.com/**。可直接转发给朋友，无需保持个人电脑开机。不要将本机文件路径、localhost、127.0.0.1 或 GitHub 仓库地址当作应用网址。
+应用已于 2026-10-29 部署到 Render Free，并完成实际公网 HTTPS 验证。固定访问地址：[https://yanzhiyouju.onrender.com/](https://yanzhiyouju.onrender.com/)。可直接转发给朋友，无需保持个人电脑开机。不要将本机文件路径、localhost、127.0.0.1 或 GitHub 仓库地址当作应用网址。
 
 ## Render 免费部署
 
