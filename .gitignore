@@ -1,7 +1,11 @@
 __pycache__/
-*.pyc
+*.py[cod]
 .env
+.env.*
+!.env.example
+runtime*/
+.secrets/
 config.local.json
-runtime_data/
 *.log
-.venv/
+test_session.xml
+api_dump.json

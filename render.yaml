@@ -4,10 +4,12 @@ services:
     runtime: python
     plan: free
     buildCommand: python -m zipfile -e app-source.zip . && pip install -r requirements.txt
-    startCommand: gunicorn cloud_app:application --bind 0.0.0.0:$PORT --workers 1 --threads 4 --timeout 60 --access-logfile -
+    startCommand: gunicorn cloud_app:application --bind 0.0.0.0:$PORT --workers 1 --threads 4 --timeout 120 --access-logfile -
     healthCheckPath: /api/health
     envVars:
       - key: PYTHON_VERSION
         value: 3.12.10
       - key: SESSION_SECRET
         generateValue: true
+      - key: APP_ENV
+        value: production
