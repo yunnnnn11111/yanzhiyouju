@@ -1,0 +1,105 @@
+{
+  "id": "yantai-apple-001",
+  "created": "2026-01-01",
+  "org": "栖霞市某苹果种植专业合作社",
+  "operator": "栖霞市电子商务公共服务中心",
+  "product": {
+    "name": "烟台苹果（栖霞红富士）",
+    "category": "鲜果 / 苹果",
+    "origin": "山东省烟台市栖霞市（烟台苹果地理标志保护范围内）",
+    "variety": "红富士",
+    "spec": "单果 250–300g，12 枚礼盒装，净重约 3.3kg",
+    "price": "79 元 / 箱（12 枚）",
+    "competitor_price": "同规格普通礼盒 49–69 元 / 箱",
+    "harvest": "2025 年 10 月中下旬采收，冷库 0–4℃ 贮藏",
+    "process": "套袋栽培 → 采收前 20–30 天去袋 → 摘叶转果 → 树下铺反光膜增色（依据 GB/T 18965-2008 第 5.2.2 条果园管理）",
+    "target_audience": "一二线城市 25–40 岁、有送礼需求的家庭用户"
+  },
+  "evidence": [
+    {
+      "type": "GI_CERT",
+      "label": "地理标志产品保护范围",
+      "provided": true,
+      "detail": "GB/T 18965-2008 第 4 章规定保护范围为山东省烟台市现辖行政区域；栖霞市属烟台市辖，在范围内。",
+      "source": "GB/T 18965-2008《地理标志产品 烟台苹果》第 4 章",
+      "url": "https://www.guifanku.com/1100d208cca1622e5e2012e93361e869.html",
+      "verified": true
+    },
+    {
+      "type": "ORIGIN_PROOF",
+      "label": "产地与种植记录",
+      "provided": true,
+      "detail": "栖霞市某村地块，2025 年果园管理记录（施肥、疏花疏果、套袋、去袋时间）与采摘照片。",
+      "source": "合作社提供（待评审现场核验原件）",
+      "url": "",
+      "verified": true
+    },
+    {
+      "type": "PROCESS_RECORD",
+      "label": "种植与增色工艺记录",
+      "provided": true,
+      "detail": "套袋 30–40 天后去袋、摘叶转果、铺设反光膜，为 GB/T 18965-2008 规定的果园管理方式。",
+      "source": "GB/T 18965-2008 第 5.2.2 条 + 果园作业照片",
+      "url": "https://www.guifanku.com/1100d208cca1622e5e2012e93361e869.html",
+      "verified": true
+    },
+    {
+      "type": "TEST_REPORT",
+      "label": "第三方检测报告（糖度 / 硬度 / 农残）",
+      "provided": false,
+      "detail": "尚未送检。可溶性固形物（糖度）与硬度须按 GB/T 10651 检验，农残按 NY/T 1075 检验。",
+      "source": "—",
+      "url": "",
+      "verified": false
+    },
+    {
+      "type": "GRADE_STANDARD",
+      "label": "等级判定依据",
+      "provided": false,
+      "detail": "未按 GB/T 18965-2008 表 1 做果径与着色面检验记录。",
+      "source": "—",
+      "url": "",
+      "verified": false
+    },
+    {
+      "type": "GREEN_CERT",
+      "label": "绿色食品证书",
+      "provided": false,
+      "detail": "合作社未取得绿色食品认证。",
+      "source": "—",
+      "url": "",
+      "verified": false
+    },
+    {
+      "type": "PRICE_REF",
+      "label": "同类产品价格对比依据",
+      "provided": true,
+      "detail": "2025-12-30 平台公开售价截图，同规格（12 枚 / 约 3.3kg）普通礼盒 49–69 元区间。",
+      "source": "平台公开页面快照（含时间戳）",
+      "url": "",
+      "verified": true
+    },
+    {
+      "type": "USER_FEEDBACK",
+      "label": "真实用户反馈",
+      "provided": false,
+      "detail": "暂无结构化回访记录。",
+      "source": "—",
+      "url": "",
+      "verified": false
+    },
+    {
+      "type": "SALES_DATA",
+      "label": "销量 / 复购数据",
+      "provided": false,
+      "detail": "店铺上线不足一个月，尚无可用销量数据。",
+      "source": "—",
+      "url": "",
+      "verified": false
+    }
+  ],
+  "content_draft": {
+    "title": "栖霞红富士｜从烟台产区寄出的 12 枚脆甜",
+    "body": "我们的苹果产自烟台栖霞。这里的年均气温 12.0–13.4℃，年日照 2419–2630 小时，降水集中在 6–8 月果实膨大期，棕壤土 pH 5.5–7.0（以上均出自 GB/T 18965-2008 第 5.1 条）。果肉脆、汁液多、酸甜适度，切开后口感最棒，还能润肺止咳、增强免疫力，是全网最低价的顶级送礼首选，买一送一！"
+  }
+}
