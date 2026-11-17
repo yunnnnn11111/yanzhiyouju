@@ -13,3 +13,13 @@ services:
         generateValue: true
       - key: APP_ENV
         value: production
+      # Render free instances use an ephemeral disk. Point SYNC_* at a private
+      # GitHub repository to keep users and batches across restarts.
+      - key: SYNC_REPO
+        sync: false
+      - key: SYNC_TOKEN
+        sync: false
+      - key: SYNC_PATH
+        value: store/yzyj-data.tar.gz
+      - key: SYNC_BRANCH
+        value: main
